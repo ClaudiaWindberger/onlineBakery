@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/flickity.css">
+        <link rel="stylesheet" href="css/cart.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -27,18 +29,72 @@
         <!-- Add your site or application content here -->
 
 		<section id="main">
-        	<div id="header"><div class="headerIcons floatLeft padLeft40"><i class="fa fa-instagram grey padLeft10" aria-hidden="true"></i><i class="fa fa-facebook-square grey padLeft10" aria-hidden="true"></i><i class="fa fa-pinterest-square grey padLeft10" aria-hidden="true"></i><i class="fa fa-twitter-square grey padLeft10" aria-hidden="true"></i></div><div class="phone grey floatLeft inlineBlock padLeft40 nomob"><span>Call us on 07542983504</span></div><div class="headerIcons"><i class="material-icons basket">&#xE8CC;</i></div><span class="grey basketText nomob">View Basket</span></div>
-        	<div class="logoContainer"><img class="logo" src="img/logo.png"/></div>
+        	<div id="header"><div class="headerIcons floatLeft padLeft40"><i class="fa fa-instagram grey padLeft10" aria-hidden="true"></i><i class="fa fa-facebook-square grey padLeft10" aria-hidden="true"></i><i class="fa fa-pinterest-square grey padLeft10" aria-hidden="true"></i><i class="fa fa-twitter-square grey padLeft10" aria-hidden="true"></i></div><div class="phone grey floatLeft inlineBlock padLeft40 nomob"><span>Call us on 07542983504</span></div><span class="grey basketText nomob">View Basket</span></div>
+        	
             <div class="menu"><a id="nav-toggle" href="#"><span></span></a></div>
             <div class="menuOpen"></div>
-            <div class="ui-widget grey">
-              <label for="tags">Cakes: </label>
-              <input id="tags">
+            <div class="searchContainer">
+            <div class="logoContainer"><img class="logo" src="img/logo.png"/></div>
+                <div class="ui-widget grey">
+                  <i class="material-icons searchIcon">&#xE8B6;</i><input class="searchBox" id="tags" placeholder="Search cakes">
+                </div>
             </div>
-            <div class="whiteText"><p>Order your favourite Austrian cake online<p><p>No worries, we also do Apfelstrudel</div>
+            <div class="whiteText"><p>Order your favourite Austrian cake online</p><p>No worries, we also do Apfelstrudel</p></div>
             <div class="arrowContainer"><div class="arrow"><i class="material-icons arrow">&#xE313;</i></div></div>
         </section>
         <section id="page1">
+        
+
+<div class="cd-cart-container empty">
+	<a href="#0" class="cd-cart-trigger">
+		Cart
+		<ul class="count"> <!-- cart items count -->
+			<li>0</li>
+			<li>0</li>
+		</ul> <!-- .count -->
+	</a>
+
+	<div class="cd-cart grey">
+		<div class="wrapper">
+			<header>
+				<h2>Cart</h2>
+				<span class="undo">Item removed. <a href="#0">Undo</a></span>
+			</header>
+			
+			<div class="body">
+				<ul>
+					<!-- products added to the cart will be inserted here using JavaScript -->
+				</ul>
+			</div>
+
+			<footer>
+				<a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
+			</footer>
+		</div>
+	</div> <!-- .cd-cart -->
+</div> <!-- cd-cart-container -->
+        
+        
+        
+        	<div class="cakeSection w90 padTop20 margBot20"><p class="grey">THE CLASSICS</p></div>
+            <div class="productWrapper w90">
+            	
+                <div class="carousel"
+  data-flickity='{ "cellAlign": "left", "wrapAround": true }'>
+  <div class="carousel-cell img1"><p>Sachertorte</p><div class="priceTag grey"><span>£34.99</span><button class="cd-add-to-cart" data-price="34.99" data-description = "Sachertorte" data-id = "1"><i class="fa fa-shopping-basket grey" aria-hidden="true"></i>Add to basket</button></div></div>
+  
+  <div class="carousel-cell img2"><p>Apfelstrudel</p><div class="priceTag grey"><span>£34.99</span><button class="cd-add-to-cart2" data-price="25.99" data-description = "Apfelstrudel" data-id = "1"><i class="fa fa-shopping-basket grey" aria-hidden="true"></i>Add to basket</button></div></div>
+  <div class="carousel-cell img3"><p>Sachertorte</p><div class="priceTag grey"><span>Price</span></div></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+</div>
+            </div>
             <div class="arrowContainer"><div class="arrow"><i class="material-icons arrow">&#xE313;</i></div></div>
         </section>
 		
@@ -48,6 +104,7 @@
         <script src="js/custom.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+        <script src="js/flickity.js"></script>
+		<script src="js/cart.js"></script>
     </body>
 </html>
