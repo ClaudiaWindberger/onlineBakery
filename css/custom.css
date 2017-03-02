@@ -76,6 +76,7 @@ body, html {
 	z-index:3;
 	text-align:right;
 	font-size:11px;
+	box-shadow: 0 1px 18px -2px grey;
 	}
 #header *{
 	line-height:60px;}
@@ -131,7 +132,7 @@ body, html {
 	width:100%;
 	display:inline-block;
 	position:relative;
-	top:30%;
+	top:20%;
 	}
 .menu{
 	width:40px;
@@ -207,28 +208,32 @@ i.fa.fa-twitter-square:hover{
     margin: auto;
 	max-width:650px;
 	}
-.ui-widget{
+.searchWidget{
 	    display: inline-block;
     vertical-align: middle;
     position: relative;
-    top: 50%;
+    top: 26%;
 	width:100%;
+	    border: 2px solid #ccc;
+    border-radius: 4px;
+	max-height:250px;
+	background-color: rgba(255, 255, 255, 0.5);
 	}
 .searchBox{
 	box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
+
     font-size: 16px;
     background-color: white;
     background-image: url('searchicon.png');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
-	width:100%;}
+	width:100%;
+	border:none;
+	}
 
 .searchBox:focus {
     outline: none !important;
-    box-shadow: 0 0 15px #000;
 }
 .cakeSection{
 	border-bottom:1px solid #6B6B6B;
@@ -276,6 +281,50 @@ i.fa.fa-twitter-square:hover{
   transform: rotate(-45deg);
 }
 
+.pwrap{
+	display: table;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+	}
+.pwrap p{
+	vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+	text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+	}
+.addedToBasket{
+	line-height: inherit!important;
+    font-size: 14px!important;
+    padding-left: 10px!important;
+	}
+.carousel a {
+	color:inherit;
+	text-decoration:none;}
+.searchWidget ul{
+	
+	margin:0!important;
+	display:none;
+	width: 100%;
+    padding: 0!important;
+	list-style-type:none;
+	max-height:208px;
+	overflow:scroll;
+}
+.searchWidget li{
+	padding:10px;}
+
+.searchWidget a{
+	text-decoration:none;
+	color:#000000;
+	display:inline-block;
+	width:100%;
+}
+.searchWidget a:hover{
+	background-color:#F4F4F4;
+	}
 @media only screen and (max-width: 420px) {
     .nomob{
 		display:none;

@@ -30,6 +30,51 @@ http://flickity.metafizzy.co
 .carousel-cell.img3{
 	background: url(../img/linzer.jpg)!important;
 	}
+.carousel-cell.img4{
+	background: url(../img/nockerl.jpg)!important;
+	}
+.carousel-cell.img5{
+	background: url(../img/krapfen.jpg)!important;
+	}
+.carousel-cell.img6{
+	background: url(../img/erdbeer.jpg)!important;
+	}
+.carousel-cell.img7{
+	background: url(../img/apfelkuchen.jpg)!important;
+	}
+.carousel-cell.img8{
+	background: url(../img/weihnacht.jpg)!important;
+	}
+.carousel-cell.img9{
+	background: url(../img/punsch.jpg)!important;
+	}
+.carousel-cell.img10{
+	background: url(../img/mohn2.jpg)!important;
+	}
+.carousel-cell.img11{
+	background: url(../img/schaumrollen.jpg)!important;
+	}
+.carousel-cell.img12{
+	background: url(../img/roulade.jpg)!important;
+	}
+.carousel-cell.img13{
+	background: url(../img/banane.jpg)!important;
+	}
+.carousel-cell.img14{
+	background: url(../img/nussstrudel.jpg)!important;
+	}
+.carousel-cell.img15{
+	background: url(../img/gugelhupf.jpg)!important;
+	}
+.carousel-cell.img16{
+	background: url(../img/apfelkuchen.jpg)!important;
+	}
+.carousel-cell.img17{
+	background: url(../img/mohn.jpg)!important;
+	}
+.carousel-cell.img18{
+	background: url(../img/topfentorte.jpg)!important;
+	}
 /* draggable */
 
 .flickity-enabled.is-draggable {

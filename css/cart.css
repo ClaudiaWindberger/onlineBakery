@@ -182,12 +182,7 @@ Main Components
       -ms-transform: scale(1);
           transform: scale(1);
 }
-.cd-cart-trigger:hover + div .wrapper {
-  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
-}
-.cart-open .cd-cart-trigger:hover + div .wrapper {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.17);
-}
+
 
 .cd-cart {
   /* cart content */
@@ -207,12 +202,9 @@ Main Components
   height: 60px;
   width: 60px;
   border-radius: 6px;
-  -webkit-transition: height .4s .1s, width  .4s .1s, box-shadow .3s;
-  transition: height .4s .1s, width  .4s .1s, box-shadow .3s;
   -webkit-transition-timing-function: cubic-bezier(0.67, 0.17, 0.32, 0.95);
           transition-timing-function: cubic-bezier(0.67, 0.17, 0.32, 0.95);
   background: #ffffff;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.17);
   pointer-events: auto;
 }
 .cd-cart header, .cd-cart footer {
@@ -243,7 +235,6 @@ Main Components
 .cd-cart footer {
   bottom: 0;
   border-radius: 0 0 6px 6px;
-  box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.15);
   background: #ffffff;
 }
 .cd-cart h2 {
@@ -265,7 +256,7 @@ Main Components
   color: #2b3e51;
 }
 .cd-cart .undo a:hover {
-  color: #2c97de;
+  color: #ac111c;
 }
 .cd-cart .undo.visible {
   opacity: 1;
@@ -276,7 +267,7 @@ Main Components
   height: 72px;
   line-height: 72px;
   margin-right: 72px;
-  background: #2c97de;
+  background: #ac111c;
   color: rgba(255, 255, 255, 0);
   text-align: center;
   font-weight: 600;
@@ -411,7 +402,7 @@ Main Components
   color: #2b3e51;
 }
 .cd-cart h3 a:hover {
-  color: #2c97de;
+  color: #ac111c;
 }
 .cd-cart .price {
   float: right;
@@ -477,7 +468,6 @@ Main Components
 .cd-cart select:focus {
   outline: none;
   color: #2b3e51;
-  box-shadow: 0 1px 0 currentColor;
 }
 .cd-cart select::-ms-expand {
   /* hide default select arrow on IE */
