@@ -18,6 +18,9 @@ jQuery(document).ready(function($){
 		$('.cd-add-to-cart, .cd-add-to-cart2, .cd-add-to-cart3, .cd-add-to-cart4, .cd-add-to-cart5, .cd-add-to-cart6, .cd-add-to-cart7, .cd-add-to-cart8, .cd-add-to-cart9, .cd-add-to-cart10, .cd-add-to-cart11, .cd-add-to-cart12, .cd-add-to-cart13, .cd-add-to-cart14, .cd-add-to-cart15, .cd-add-to-cart16, .cd-add-to-cart17, .cd-add-to-cart18').on('click', function(event){
 			event.preventDefault();
 			addToCart($(this));
+			$(this).attr("disabled", true);
+			$(".priceTag button:hover").css("color", "#6B6B6B");
+			$(this).css("background-color", "#C5C5C5");
 		});
 		
 	

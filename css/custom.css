@@ -25,7 +25,7 @@
   color: white;
 }
 
-.carousel-cell > p{
+.carousel-cell > a > p{
 	margin:0;
 	line-height:200px;
 	text-transform:uppercase;
@@ -45,16 +45,7 @@
 	line-height:60px;
 	padding-left:20px;
 	}
-.priceTag button{
-	    float: right;
-    margin: 14px 20px 0px 10px;
-    border: none;
-    background-color: #fff;
-    border-radius: 5px;
-    height: 34px;
-    width: 150px;
-	cursor:pointer;
-	}
+
 .priceTag button:hover{
 	color:#000;}
 i.fa.fa-shopping-basket{
@@ -325,6 +316,36 @@ i.fa.fa-twitter-square:hover{
 .searchWidget a:hover{
 	background-color:#F4F4F4;
 	}
+.ui-dialog{
+    width: 70%!important;
+    left: 15%!important;
+    background-color: #fff!important;
+	outline:none!important;
+	padding:0!important;
+	border:none!important;
+	}
+.ui-dialog img{
+	    width: 200px;
+    float: left;
+    padding: 20px;
+	}
+.ui-button:focus { outline:none !important }
+.ui-widget button:focus { outline:none !important }
+
+.ui-dialog .ui-dialog-content{
+	    padding: 10px 20px 20px 10px;
+		}
+
+.ui-dialog .ui-dialog-content p{
+	margin-bottom:0!important;}
+.ui-corner-all{
+	border:none!important;
+	border-bottom-right-radius:0!important;
+	border-bottom-left-radius:0!important;
+	border-bottom-top-radius:0!important;
+	border-bottom-bottom-radius:0!important;
+	}
+
 @media only screen and (max-width: 420px) {
     .nomob{
 		display:none;

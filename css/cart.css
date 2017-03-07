@@ -15,7 +15,32 @@ Primary style
 .cd-add-to-cart {
   -webkit-transition: all .2s;
   transition: all .2s;
+      float: right;
+    margin: 14px 20px 0px 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 34px;
+    width: 150px;
 }
+
+.priceTag button, .ui-dialog .ui-dialog-content button{
+	  float: right;
+    margin: 14px 20px 0px 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 34px;
+    width: 150px;
+	padding:5px;
+	}
+.ui-dialog .ui-dialog-content button{
+	border:1px solid #6B6B6B;
+	}
+.cd-add-to-cart:hover {
+	color:#000;}
+
+
 .cd-add-to-cart:active {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
@@ -256,7 +281,7 @@ Main Components
   color: #2b3e51;
 }
 .cd-cart .undo a:hover {
-  color: #ac111c;
+  color: #E9A55D;
 }
 .cd-cart .undo.visible {
   opacity: 1;
@@ -267,15 +292,17 @@ Main Components
   height: 72px;
   line-height: 72px;
   margin-right: 72px;
-  background: #ac111c;
+  background: #E9A55D;
   color: rgba(255, 255, 255, 0);
   text-align: center;
   font-weight: 600;
   -webkit-transition: all .2s 0s;
   transition: all .2s 0s;
+  width:100%;
 }
+
 .cd-cart .checkout:hover {
-  background: #399ee0;
+  background: #F0D37E;
 }
 .cd-cart .checkout em {
   position: relative;
@@ -402,7 +429,7 @@ Main Components
   color: #2b3e51;
 }
 .cd-cart h3 a:hover {
-  color: #ac111c;
+  color: #E9A55D;
 }
 .cd-cart .price {
   float: right;
