@@ -1,20 +1,17 @@
 jQuery(document).ready(function($){
-	var cartWrapper = $('.cd-cart-container');
-	//product id - you don't need a counter in your real project but you can use your real product id
+	var cartWrapper = $(".cd-cart-container");
 	var productId = 0;
 
 	if( cartWrapper.length > 0 ) {
-		//store jQuery objects
-		var cartBody = cartWrapper.find('.body');
-		var cartList = cartBody.find('ul').eq(0);
-		var cartTotal = cartWrapper.find('.checkout').find('span');
-		var cartTrigger = cartWrapper.children('.cd-cart-trigger');
-		var cartCount = cartTrigger.children('.count');
-		var undo = cartWrapper.find('.undo');
+		var cartBody = cartWrapper.find(".body");
+		var cartList = cartBody.find("ul").eq(0);
+		var cartTotal = cartWrapper.find(".checkout").find("span");
+		var cartTrigger = cartWrapper.children(".cd-cart-trigger");
+		var cartCount = cartTrigger.children(".count");
+		var undo = cartWrapper.find(".undo");
 		var undoTimeoutId;
 
-		//add product to cart
-		
+		//ADD PRODUCT TO CART
 		$('.cd-add-to-cart, .cd-add-to-cart2, .cd-add-to-cart3, .cd-add-to-cart4, .cd-add-to-cart5, .cd-add-to-cart6, .cd-add-to-cart7, .cd-add-to-cart8, .cd-add-to-cart9, .cd-add-to-cart10, .cd-add-to-cart11, .cd-add-to-cart12, .cd-add-to-cart13, .cd-add-to-cart14, .cd-add-to-cart15, .cd-add-to-cart16, .cd-add-to-cart17, .cd-add-to-cart18').on('click', function(event){
 			event.preventDefault();
 			addToCart($(this));
@@ -23,36 +20,32 @@ jQuery(document).ready(function($){
 			$(this).css("background-color", "#C5C5C5");
 		});
 		
-	
 
-		//open/close cart
+		//EVENTS WHEN PRESSING ADD TO CART BUTTON
 		$('.cd-cart-trigger, .cd-add-to-cart, .cd-add-to-cart2, .cd-add-to-cart3, .cd-add-to-cart4, .cd-add-to-cart5, .cd-add-to-cart6, .cd-add-to-cart7, .cd-add-to-cart8, .cd-add-to-cart9, .cd-add-to-cart10, .cd-add-to-cart11, .cd-add-to-cart12, .cd-add-to-cart13, .cd-add-to-cart14, .cd-add-to-cart15, .cd-add-to-cart16, .cd-add-to-cart17, .cd-add-to-cart18').on('click', function(event){
 			event.preventDefault();
 			$(this).find("i").removeClass("fa fa-shopping-basket");
 			$(this).find("i").addClass("fa fa-check");
 			$(this).find("i").removeClass("black");
 			$(this).find(".addedToBasket").text("Added to basket");
-		});
-		
-		//Added to basket
-			$('.cd-cart-trigger, .cd-add-to-cart, .cd-add-to-cart2, .cd-add-to-cart3, .cd-add-to-cart4, .cd-add-to-cart5, .cd-add-to-cart6, .cd-add-to-cart7, .cd-add-to-cart8, .cd-add-to-cart9, .cd-add-to-cart10, .cd-add-to-cart11, .cd-add-to-cart12, .cd-add-to-cart13, .cd-add-to-cart14, .cd-add-to-cart15, .cd-add-to-cart16, .cd-add-to-cart17, .cd-add-to-cart18').on('click', function(event){
-			event.preventDefault();
 			toggleCart();
+
 		});
 		
-		//close cart when clicking on the .cd-cart-container::before (bg layer)
-		cartWrapper.on('click', function(event){
+
+		//CLOSE CART WHEN CLICKING ON BG
+				cartWrapper.on("click", function(event){
 			if( $(event.target).is($(this)) ) toggleCart(true);
 		});
 
-		//delete an item from the cart
-		cartList.on('click', '.delete-item', function(event){
+		//DELETE ITEM FROM CART
+		cartList.on("click", ".delete-item", function(event){
 			event.preventDefault();
-			removeProduct($(event.target).parents('.product'));
+			removeProduct($(event.target).parents(".product"));
 		});
 
-		//update item quantity
-		cartList.on('change', 'select', function(event){
+		//QUANTITY
+		cartList.on("change", "select", function(event){
 			quickUpdateCart();
 		});
 

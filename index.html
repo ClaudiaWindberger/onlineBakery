@@ -31,11 +31,22 @@
 
 		<section id="main">
       
+   <div id="checkoutDialog" title="Not live yet">
+  <p>This website is for training purposes only. Feel free to contact me though, I might accept personal requests for a cake of your choice :)<br><a href="cv.pdf" target="_blank">Check out my CV</a></p>
+</div>
 
-        	<div id="header"><div class="headerIcons floatLeft padLeft40"><i class="fa fa-instagram grey padLeft10" aria-hidden="true"></i><i class="fa fa-facebook-square grey padLeft10" aria-hidden="true"></i><i class="fa fa-pinterest-square grey padLeft10" aria-hidden="true"></i><i class="fa fa-twitter-square grey padLeft10" aria-hidden="true"></i></div><div class="phone grey floatLeft inlineBlock padLeft40 nomob"><span>Call us on 07542983504</span></div><span class="grey basketText nomob">View Basket</span></div>
+        	<div id="header"><div class="headerIcons floatLeft padLeft40"><i class="fa fa-instagram grey padLeft10" aria-hidden="true"></i><i class="fa fa-facebook-square grey padLeft10" aria-hidden="true"></i><i class="fa fa-pinterest-square grey padLeft10" aria-hidden="true"></i><i class="fa fa-twitter-square grey padLeft10" aria-hidden="true"></i></div><div class="phone grey floatLeft inlineBlock padLeft40 nomob"><span>Call me on 07542983504</span></div><span class="grey basketText nomob">View Basket</span></div>
         	
             <div class="menu"><a id="nav-toggle" href="#"><span></span></a></div>
-            <div class="menuOpen"></div>
+            <div class="menuOpen">
+            	<div class="menuContainer grey">
+                    <a href="#classics"><li>THE CLASSICS</li></a>
+                    <a href="#season"><li>SEASON WINNERS</li></a>
+                    <a href="#tea"><li>TEA PARTY</li></a>
+                    <a href="#country"><li>COUNTRY LIFE</li></a>
+                    <a href="#contact"><li>CONTACT ME</li></a>
+                </div>
+            </div>
             <div class="searchContainer">
             <div class="logoContainer"><img class="logo" src="img/logo.png"/></div>
             
@@ -93,7 +104,7 @@
 			</div>
 
 			<footer>
-				<a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
+				<a href="#0" class="checkout btn"><em>Checkout - £<span>0</span></em></a>
 			</footer>
 		</div>
 	</div> <!-- .cd-cart -->
@@ -107,7 +118,7 @@
         
 
 
-        	<div class="cakeSection w90 padTop20 margBot20"><p class="grey">THE CLASSICS</p></div>
+        	<a name="classics"><div class="cakeSection w90 padTop20 margBot20"><p class="grey">THE CLASSICS</p></div></a>
             <div class="productWrapper w90">
             	
                 <div class="carousel"
@@ -132,9 +143,10 @@
        <div id="nockerlDialog" title="Salzburger Nockerl"><img src="img/nockerl.jpg"/>
   <p>Salzburger Nockerl is a sweet soufflé served as a dessert, a culinary speciality in the Austrian city of Salzburg.</p><button class="cd-add-to-cart4" data-price="8.99" data-description = "Salzburger Nockerl"><i class="fa fa-shopping-basket grey" aria-hidden="true"></i><span class="addedToBasket">Add to basket</span></button>
 </div>
+
 </div></div>
 
-            <div class="cakeSection w90 padTop20 margBot20"><p class="grey">SEASON WINNERS</p></div>
+            <a name="season"><div class="cakeSection w90 padTop20 margBot20"><p class="grey">SEASON WINNERS</p></div></a>
             <div class="productWrapper w90">
             	
                 <div class="carousel"
@@ -162,7 +174,7 @@
 </div>
             </div>
 
- <div class="cakeSection w90 padTop20 margBot20"><p class="grey">TEA PARTY</p></div>
+ <a name="tea"><div class="cakeSection w90 padTop20 margBot20"><p class="grey">TEA PARTY</p></div></a>
             <div class="productWrapper w90">
             	
                 <div class="carousel"
@@ -196,7 +208,7 @@
   
 </div>
 
- <div class="cakeSection w90 padTop20 margBot20"><p class="grey">COUNTRY LIFE</p></div>
+ <a name="country"><div class="cakeSection w90 padTop20 margBot20"><p class="grey">COUNTRY LIFE</p></div></a>
             <div class="productWrapper w90">
             	
                 <div class="carousel"
@@ -224,7 +236,12 @@
 </div>
 </div>
         </section>
-		
+		<section id="footer">
+        <div class="w90">
+        	<div class="about">&#9400; Claudia Windberger<br>Passionate Developer and Baker<br>Interested in hearing more? <br><a href="cv.pdf" target="_blank">Check out my CV</a></div>
+        	<div class="terms"><img class="payment" src="img/payment.png"/><p>Terms and Conditions | Privacy & Cookies Policy</p><p><a href="#classics">The classics</a><br><a href="#season">Season winners</a><br><a href="#tea">Tea party</a><br><a href="#country">Country life</a></p></div>
+            </div>
+        </section>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

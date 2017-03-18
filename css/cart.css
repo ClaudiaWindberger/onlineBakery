@@ -31,7 +31,7 @@ Primary style
     background-color: #fff;
     border-radius: 5px;
     height: 34px;
-    width: 150px;
+    width: 165px;
 	padding:5px;
 	}
 .ui-dialog .ui-dialog-content button{
@@ -212,7 +212,7 @@ Main Components
 .cd-cart {
   /* cart content */
   z-index: 2;
-  width: 90%;
+  width: 100%;
   max-width: 440px;
   height: 400px;
   max-height: 90%;
